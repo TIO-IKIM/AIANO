@@ -1,0 +1,103 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/routeTree.gen.ts"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": ["./tsconfig.app.json", "./tsconfig.node.json"]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import",
+    "jsx-a11y",
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-key": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.spec.ts",
+          "**/*.spec.tsx",
+          "**/vite.config.ts",
+          "**/eslint.config.*"
+        ]
+      }
+    ],
+    "import/no-restricted-paths": [
+      "error",
+      {
+        "zones": [
+          {
+            "target": "./src/containers",
+            "from": "./src/app"
+          },
+          {
+            "target": [
+              "./src/components",
+              "./src/hooks",
+              "./src/lib",
+              "./src/types",
+              "./src/utils"
+            ],
+            "from": ["./src/container", "./src/app"]
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  }
+}
+

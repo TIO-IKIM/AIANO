@@ -1,0 +1,49 @@
+[
+  {
+    "Document_Id": "doc-legal-001",
+    "Subject_Id": "case-001",
+    "text": "This contract agreement is entered into on January 15, 2024, between Party A (the 'Employer') and Party B (the 'Employee'). The terms include a two-year employment period, annual salary of $75,000, and standard benefits package. Confidentiality clause applies to all proprietary information.",
+    "Category": "Legal",
+    "Display": "Employment Contract",
+    "Date": "2024-01-15",
+    "Contract_Type": "Employment",
+    "Status": "Active",
+    "Value": 150000
+  },
+  {
+    "Document_Id": "doc-research-001",
+    "Subject_Id": "study-001",
+    "text": "Our research study examined the effects of machine learning algorithms on document classification accuracy. We tested 5 different models across 10,000 documents. Results showed that transformer-based models achieved 94.5% accuracy, outperforming traditional methods by 12%. The study was conducted over 6 months with ethical approval from the institutional review board.",
+    "Category": "Research",
+    "Display": "ML Classification Study",
+    "Date": "2024-01-20",
+    "Study_ID": "ST-2024-001",
+    "Participants": 10000,
+    "Accuracy": 94.5
+  },
+  {
+    "Document_Id": "doc-news-001",
+    "Subject_Id": "article-001",
+    "text": "Breaking news: Scientists have made a breakthrough in renewable energy technology. A new solar panel design has achieved 35% efficiency, a significant improvement over previous models. The technology could revolutionize the energy sector and help combat climate change. Commercial availability expected by 2025.",
+    "Category": "News",
+    "Display": "Renewable Energy Breakthrough",
+    "Date": "2024-01-25",
+    "Author": "Science Reporter",
+    "Source": "Tech News Daily",
+    "Tags": [
+      "Science",
+      "Energy",
+      "Environment"
+    ]
+  },
+  {
+    "Document_Id": "doc-qa-001",
+    "Subject_Id": "qa-001",
+    "text": "Question: What are the main components of a neural network? Answer: A neural network consists of three main components: input layer, hidden layers, and output layer. Each layer contains neurons (nodes) that process information. Connections between neurons have weights that are adjusted during training. Activation functions determine the output of each neuron.",
+    "Category": "Education",
+    "Display": "Neural Network Q&A",
+    "Date": "2024-01-30",
+    "Topic": "Machine Learning",
+    "Difficulty": "Intermediate"
+  }
+]
